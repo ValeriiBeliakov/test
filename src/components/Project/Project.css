@@ -1,0 +1,61 @@
+.project_block {
+    width: 37.3rem;
+    height: auto;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.project_block img {
+    width: 37.5rem;
+    height: 26rem;
+    border-radius: 20px 20px 0 0;
+}
+
+.text-block {
+    padding: 2.7rem 4.5rem 2.5rem 2.8rem;
+}
+
+.project_title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 1.7rem;
+    text-align: center;
+}
+
+.project_text {
+    width: 31.4rem;
+    height: 13rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: rgba(102, 102, 102, 1)
+}
+
+.stack {
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+    margin-bottom: 2.1rem;
+}
+
+.links_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links_block div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.links_block img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.links_block a {
+    font-size: 1.6rem;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 1);
+}

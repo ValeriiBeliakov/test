@@ -1,0 +1,128 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.1rem;
+    position: sticky;
+    top: 10px;
+    left: 0;
+    z-index: 999;
+}
+
+.logo {
+    width: 9.7rem;
+    height: 5.9rem;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5.1rem;
+}
+
+.line {
+    display: flex;
+    gap: 6.2rem;
+}
+
+
+
+.icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
+@media (max-width: 1050px) {
+    .line {
+        gap: 4.8rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .line {
+        gap: 2.4rem;
+    }
+}
+
+@media(max-width: 760px) {
+    .line {
+        gap: 1.4rem;
+    }
+}
+
+@media (max-width: 710px) {
+    .btn-mobile-nav {
+        display: block;
+        z-index: 9999;
+    }
+
+    .header_content {
+        background-color: rgba(255, 255, 255, 0.9);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+
+
+        flex-direction: column;
+        transition: all 0.5s ease-in;
+
+
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+
+        .links a {
+            font-size: 3.2rem;
+        }
+    }
+
+    .nav-open.header_content {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+    .line {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.4rem;
+    }
+
+    .line li {
+        font-size: 3.2rem;
+    }
+
+}
